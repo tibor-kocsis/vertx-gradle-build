@@ -15,10 +15,10 @@ buildscript {
 }
 
 apply plugin: 'java'
-apply plugin: "com.github.johnrengelman.shadow"
+apply plugin: 'com.github.johnrengelman.shadow'
 
 repositories {
-    jcenter()
+	jcenter()
 }
 
 sourceCompatibility = "1.8"
@@ -27,7 +27,7 @@ targetCompatibility = "1.8"
 dependencies {
 	compile "io.vertx:vertx-core:$vertxVersion"
 	compile "io.vertx:vertx-web:$vertxVersion"
-    testCompile 'junit:junit:4.12'
+	testCompile 'junit:junit:4.12'
 }
 
 shadowJar {
